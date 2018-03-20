@@ -5,15 +5,15 @@ date: 2018-03-20 14:31:48
 description: or1k toolchain building
 ---
 
-# or1k_toolchain_howto
+## or1k_toolchain_howto
 
-## Make directory
+# Make directory
 
 > mkdir or1k_build
 
 > cd or1k_build
 
-## Get sources
+# Get sources
 
 > git clone git://github.com/lswang2/binutils-gdb
 
@@ -22,7 +22,7 @@ description: or1k toolchain building
 > git clone git://github.com/openrisc/newlib
 
 
-## Build the first set of tools, binutils etc.
+# Build the first set of tools, binutils etc.
 
 - NOTE: on 32-bit machines --disable-werror is needed due to an enum acting as bit mask is considered signed
 
@@ -36,7 +36,7 @@ description: or1k toolchain building
 
 > make install
 
-## Build gcc
+# Build gcc
 
 > cd ../build-gcc
 
@@ -46,7 +46,7 @@ description: or1k toolchain building
 
 > make install
 
-## build newlib and gdb (without or1ksim in this case)
+# build newlib and gdb (without or1ksim in this case)
 
 > cd ../build-newlib
 
@@ -58,7 +58,7 @@ description: or1k toolchain building
 
 > make install
 
-## build gcc again, this time with newlib
+# build gcc again, this time with newlib
 
 > cd ../build-gcc2
 
@@ -68,7 +68,7 @@ description: or1k toolchain building
 
 > make install
 
-## Finally, we will want to run the following to put this path in our .bashrc file:
+# Finally, we will want to run the following to put this path in our .bashrc file:
 
 > echo "# OpenRISC tool chain path" >> ~/.bashrc
 
