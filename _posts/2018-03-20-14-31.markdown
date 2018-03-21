@@ -5,8 +5,6 @@ date: 2018-03-20 14:31:48
 description: or1k toolchain building
 ---
 
-# or1k_toolchain_howto
----
 ## Make directory
 
 > mkdir or1k_build
