@@ -9,7 +9,7 @@ url:  # the base hostname & protocol for your site
 # github_username:  github_username
 
 # Build settings
-markdown: kramdown
+markdown: markdown
 
 highlighter: rouge
 
